@@ -1,0 +1,12 @@
+server:
+  port: 9092
+
+spring:
+  application:
+    name: RESOURCE-SERVICE
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: hospital_management_resource_service
+  config:
+    import: optional:configserver:http://localhost:9093
